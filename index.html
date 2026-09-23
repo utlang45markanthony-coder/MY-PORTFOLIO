@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+
+        <nav class="navbar" aria-label="Primary navigation">
+            <a id="logo" href="#home">My PORTFOLIO</a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="hero" id="home" aria-labelledby="home-title">
+                <div class="image-section">
+                    <img src="profile.jpg" alt="Portrait of Mark Anthony M. Utlang">
+                </div>
+
+                <div class="text-section">
+                    <h2 class="greeting">Hi!</h2>
+                    <h1 id="home-title">I'M MARK ANTHONY M. UTLANG</h1>
+                    <h3>COMPETITIVE PLAYER IN CALL OF DUTY MOBILE</h3>
+                </div>
+            </section>
+
+            <section class="content-section" id="about" aria-labelledby="about-title">
+                <h2 id="about-title">ABOUT ME</h2>
+                <p>I am a competative player in codm who enjoys playing games especially codm and competing in small tournaments and building experiences.</p>
+                <p>This portfolio is a place to share my passion, skills,hobbies and the ideas behind my competative journey.</p>
+            </section>
+
+            <section class="content-section experience-section" id="experience" aria-labelledby="experience-title">
+                <h2 id="experience-title">EXPERIENCE</h2>
+                <p class="experience-intro">Competitive Call of Duty: Mobile player with experience in 1v1, 2v2, and 5v5 tournaments. I have competed in multiple events and earned championship finishes across different divisions.</p>
+                <div class="experience-list">
+                    <article class="experience-item">
+                        <div class="experience-date">MAJOR<br>TOURNA</div>
+                        <div class="experience-details">
+                            <h3>GM10 Top 31</h3>
+                            <p>Reached the Top 31 in GM10, competing against strong players in a major competitive event.</p>
+                            <span class="experience-tag">MAJOR TOURNAMENT</span>
+                        </div>
+                    </article>
+                    <article class="experience-item">
+                        <div class="experience-date">CHAMPION</div>
+                        <div class="experience-details">
+                            <h3>Championship Victories</h3>
+                            <ul class="achievement-list">
+                                <li>Elle Tournament Season 1 - Boy Division 5v5</li>
+                                <li>Wooze Elite x Bloodline Inter Scrimmage 5v5</li>
+                                <li>Tournament in Apex Rebellion 5v5</li>
+                                <li>Kairi x Akuma 5v5 Season 2</li>
+                                <li>Sidra x RE x Soriux x Nan 5v5</li>
+                                <li>Sami x Cozi's 5v5 Tournament Season 2 - Boy's Division</li>
+                                <li>Auremu's 5v5 Tournament Season 1</li>
+                                <li>Valoroes Infinity &amp; Wedipi 2v2 SR/SG Tournament</li>
+                            </ul>
+                            <span class="experience-tag">8 CHAMPIONSHIPS</span>
+                        </div>
+                    </article>
+                    <article class="experience-item">
+                        <div class="experience-date">FIRST<br>PLACE</div>
+                        <div class="experience-details">
+                            <h3>First-place Finishes</h3>
+                            <ul class="achievement-list">
+                                <li>Mddy x Neko Season 2 5v5</li>
+                                <li>Elle x Muka 5v5 Tournament</li>
+                                <li>Navi's 5v5 Tournament Season 21</li>
+                                <li>Joji 5v5 Tournament Season 5</li>
+                                <li>Arxedy 5v5 Tournament Season 1 - Boys Division</li>
+                            </ul>
+                            <span class="experience-tag">5 FIRST-PLACE FINISHES</span>
+                        </div>
+                    </article>
+                    <article class="experience-item">
+                        <div class="experience-date">SECOND<br>PLACE</div>
+                        <div class="experience-details">
+                            <h3>Runner-up Finishes</h3>
+                            <ul class="achievement-list">
+                                <li>SVT 1v1 Tournament - SG Division</li>
+                                <li>Zelu's 5v5 Boy's Division</li>
+                            </ul>
+                            <span class="experience-tag">2 SECOND-PLACE FINISHES</span>
+                        </div>
+                    </article>
+                    <article class="experience-item">
+                        <div class="experience-date">THIRD<br>PLACE</div>
+                        <div class="experience-details">
+                            <h3>Podium Finish</h3>
+                            <ul class="achievement-list">
+                                <li>Hera Season 1 5v5 Tournament</li>
+                            </ul>
+                            <span class="experience-tag">3RD-PLACE FINISH</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section contact-section" id="contact" aria-labelledby="contact-title">
+                <h2 id="contact-title">CONTACT</h2>
+                <p>Want to learn more about my competitive CODM experience or discuss a tournament opportunity? Get in touch with me.</p>
+                <div class="contact-links">
+                    <a class="contact-link" href="mailto:anthonyutlang45@gmail.com"><span class="contact-icon email-icon" aria-hidden="true">✉</span>anthonyutlang45@gmail.com</a>
+                    <a class="contact-link facebook-link" href="https://www.facebook.com/erlinda.mission.5" target="_blank" rel="noopener noreferrer"><span class="contact-icon facebook-icon" aria-hidden="true">f</span>Mark Anthony M. Utlang</a>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('#nav-links');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('open');
+                menuToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
